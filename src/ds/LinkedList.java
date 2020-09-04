@@ -1,6 +1,10 @@
 package ds;
 
-//author- Avinash Shukla
+/**
+ * 
+ * @author Avinash
+ *
+ */
 
 public class LinkedList {
 	
@@ -16,7 +20,10 @@ public class LinkedList {
 		head = null;
 	}
 	
-	
+	/**
+	 *This will insert the node in the beginning
+	 * @param data
+	 */
 	public void insertBeginning(int data){
 		LinkedList node = new LinkedList();
 		node.data = data;
@@ -31,6 +38,10 @@ public class LinkedList {
 		
 	}
 	
+	/**
+	 * This will insert the node at the end
+	 * @param data
+	 */
 	public void insertEnd(int data){
 		LinkedList node = new LinkedList();
 		node.data = data;
@@ -48,6 +59,9 @@ public class LinkedList {
 		
 	}
 	
+	/**
+	 * This will delete the node from the beginning
+	 */
 	public void deleteBeginning(){
 		if(head==null){
 			System.out.println("LinkedList is already empty");
@@ -57,6 +71,9 @@ public class LinkedList {
 		}
 	}
 	
+	/**
+	 * This will delete the node from the end
+	 */
 	public void deleteEnd(){
 		if(head==null){
 			System.out.println("LinkedList is already empty");
@@ -73,6 +90,9 @@ public class LinkedList {
 		}
 	}
 	
+	/**
+	 * Print the data present in the nodes of the LinkedList
+	 */
 	public void print(){
 		if(head==null){
 			System.out.println("LinkedList is empty");
